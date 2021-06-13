@@ -13,31 +13,31 @@
 
     function tagsGenerator() {
 
-        var skills1 = ['Power BI', 'Tableau', 'Jira', 'Salesforce', 'DBeaver', 'Postman', 'Putty', 'IntelliJ', 'Azure Storage Explorer', 'AWS s3', 'Azure Portal', 'Azure Databricks', 'Azure Data Factory', 'GitHub', 'Grafana', 'Apache Zeppelin', 'Superset', 'Teams', 'Outlook', 'Excel', 'Word', 'PowerPoint'],
-            skills2 = ['Python', 'pandas', 'numpy', 'matplotlib', 'SQL', 'PySpark', 'Spark', 'Hive', 'Scala', 'Shell', 'R', 'C', 'C++', 'Java', 'PIG'],
-            skills3 = ['Data Visualization', 'Hadoop', 'Presto', 'Data and Business Analytics', 'Advanced Statistics and Predictive Modelling', 'Stakeholder Management', 'Project Management', 'Machine Learning', 'avsc', 'parquet', 'snappy file formats'],
+        var skillsApp = ['Power BI', 'Tableau', 'Jira', 'Salesforce', 'DBeaver', 'Postman', 'Putty', 'IntelliJ', 'Azure Storage Explorer', 'AWS s3', 'Azure Portal', 'Azure Databricks', 'Azure Data Factory', 'GitHub', 'Grafana', 'Apache Zeppelin', 'Superset', 'Teams', 'Outlook', 'Excel', 'Word', 'PowerPoint'],
+            skillsPro = ['Python', 'pandas', 'numpy', 'matplotlib', 'SQL', 'PySpark', 'Spark', 'Hive', 'Scala', 'Shell', 'R', 'C', 'C++', 'Java', 'PIG'],
+            skillsOther = ['Data Visualization', 'Hadoop', 'Presto', 'Data and Business Analytics', 'Advanced Statistics and Predictive Modelling', 'Stakeholder Management', 'Project Management', 'Machine Learning', 'avsc', 'parquet', 'snappy file formats'],
             colors = ['btn-info', 'btn-success', 'btn-danger', 'btn-primary', 'btn-warning'],
             i = 0;
 
-        $.each(skills1, function(key, value) {
+        $.each(skillsApp, function(key, value) {
             if (i === 5) {
                 i = 0;
             }
-            $('.tags.skills-1').append('<div class="tag label  ' + colors[i] + ' lg"><span>' + value + '</span></div>')
+            $('.tags.skills-App').append('<div class="tag label  ' + colors[i] + ' lg"><span>' + value + '</span></div>')
             i++;
         });
-        $.each(skills2, function(key, value) {
+        $.each(skillsPro, function(key, value) {
             if (i === 5) {
                 i = 0;
             }
-            $('.tags.skills-2').append('<div class="tag label  ' + colors[i] + ' lg"><span>' + value + '</span></div>')
+            $('.tags.skills-Pro').append('<div class="tag label  ' + colors[i] + ' lg"><span>' + value + '</span></div>')
             i++;
         });
-        $.each(skills3, function(key, value) {
+        $.each(skillsOther, function(key, value) {
             if (i === 5) {
                 i = 0;
             }
-            $('.tags.skills-3').append('<div class="tag label  ' + colors[i] + ' lg"><span>' + value + '</span></div>')
+            $('.tags.skills-Other').append('<div class="tag label  ' + colors[i] + ' lg"><span>' + value + '</span></div>')
             i++;
         });
     }
